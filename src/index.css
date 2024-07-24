@@ -112,9 +112,7 @@ button {
 .cards {
   margin-top: 25px;
   overflow-x: auto;
-
-
-  height: 300px;
+  max-height: 300px;
 }
 
 .card {
