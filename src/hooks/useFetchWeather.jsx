@@ -30,10 +30,10 @@ const useFetchWeather = () => {
       // if it is not add it
       if (newWeatherData === -1) {
         setCards([...cards, res.data]);
+        setError("");
       } else {
-        setError("This lat and long is already exist");
+        setError("This lat and long already exist");
       }
-      setError("");
     } catch (error) {
       setError(error.response.data.message || "Invalid Data");
     } finally {
