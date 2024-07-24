@@ -14,7 +14,7 @@ const useFetchWeather = () => {
   });
 
   // Get the Weather Data
-  const fetchWeather = useCallback(async () => {
+  const fetchWeather = async () => {
     setLoading(true);
     try {
       const res = await axiosInstance.get("data/2.5/weather", {
@@ -39,7 +39,7 @@ const useFetchWeather = () => {
     } finally {
       setLoading(false);
     }
-  }, [coord.lat, coord.lon]);
+  };
   return {
     fetchWeather,
     cards,
