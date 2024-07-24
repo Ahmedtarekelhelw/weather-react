@@ -3,7 +3,7 @@ import axios from "axios";
 export const axiosInstance = axios.create({
   baseURL: "http://api.openweathermap.org/",
   params: {
-    appid: "9f7f43553c3b47d0fa6636d1edfd1f8a",
+    appid: import.meta.env.VITE_API_KEY,
   },
 });
 
