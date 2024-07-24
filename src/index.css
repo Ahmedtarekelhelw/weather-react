@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+
+body {
+  padding: 20px 50px;
+  font-family: sans-serif;
+}
+
+
+
+
+.header {
+  padding: 10px;
+}
+.header-text {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.header-paragraph {
+  color: hsl(240 3.8% 45%);
+}
+
+
+
+
+/* Form */
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 15px;
+}
+
+input {
+  padding:10px;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  border: 1px solid hsl(3 , 7% ,15.9%);
+}
+
+label {
+  margin-top: 15px;
+  line-height: 0;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+button {
+  padding: 13px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  background-color: #18181b;
+  color: #fff;
+  font-weight:500;
+}
+
+
+
+
+
+.card-container {
+  padding: 25px;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  max-width: 28rem;
+  box-shadow:  0 0 #0000,  0 0 #0000, 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  margin: auto;
+}
+
+.cards {
+  margin-top: 25px;
+}
+
+.card {
+ padding: 20px;
+ display: flex;
+gap: 20px;
+justify-content: space-between;
+align-items: center;
+}
+
+.card:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+
+}
+
+
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+  color: #6e6e77;
+
+}
+
+.city-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.city-temp {
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  gap: 8px;
+}
+
+
+.date {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.error {
+  text-align: center;
+  background-color: rgb(255 217 213);
+  font-size: 16px;
+  color: #000;
+  margin: 15px auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+
+
+.loading {
+text-align: center;
+margin-top: 10px;
+}
+
+
